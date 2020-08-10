@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    }
 
    if (empty($_POST["sname"])) {
-    $sNameErr = "First name is required";
+    $sNameErr = "Second name is required";
   } else {
     $sName = test_input($_POST["sname"]);
     if (!preg_match("/^[a-zA-Z ]*$/", $sName)){
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   if (empty($_POST["email"])) {
-    $emailErr = "First name is required";
+    $emailErr = "Email is required";
   } else {
     $email = test_input($_POST["email"]);
   
@@ -31,23 +31,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
   }
   if (empty($_POST["dob"])) {
-    $dobErr = "First name is required";
+    $dobErr = "Date of birth is required";
   } else {
     $dob = test_input($_POST["dob"]);
   }
    if ($_POST["color"]== '#000000') {
-    $colorErr = "Message is required";
+    $colorErr = "Color is required";
   } else {
     $color = test_input($_POST["color"]);
   }
 
   if (empty($_POST["gender"])) {
-    $genderErr = "First name is required";
+    $genderErr = "Gender is required";
   }  else {
     $gender = test_input($_POST["gender"]);
   }
   if (empty($_POST["department"])) {
-    $departmentErr = "First name is required";
+    $departmentErr = "Department name is required";
   } else {
     $department = test_input($_POST["department"]);
   }
